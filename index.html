@@ -6,7 +6,7 @@
     <title>VICE CITY BR | Grupo VIP de Ofertas & Pré-venda GTA VI</title>
     <meta name="description" content="Garanta o GTA VI, PS5, Xbox e acessórios pelo menor preço do Brasil. Alertas de pré-venda e cupons exclusivos.">
     
-    <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code (Apenas Carregamento - Sem PageView) -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -17,7 +17,6 @@
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1142964964857808');
-    fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1142964964857808&ev=PageView&noscript=1"
@@ -106,18 +105,14 @@
 </head>
 <body class="min-h-screen flex flex-col justify-between relative selection:bg-neonPink selection:text-white">
 
-    <!-- CONFIGURAÇÃO DE URL DO GRUPO E RASTREAMENTO -->
+    <!-- CONFIGURAÇÃO DE URL DO GRUPO E RASTREAMENTO EXCLUSIVO DE CLIQUE -->
     <script>
-        // ==========================================
-        // EDITE O LINK DO SEU GRUPO AQUI ABAIXO 👇
-        // ==========================================
         const URL_GRUPO_VIP = "https://chat.whatsapp.com/K0nZre7x9vf5lUGoouFAOC";
         
-        // Função universal de redirecionamento + Disparo do Pixel (Lead)
         function irParaOGrupo(e) {
             if (e) e.preventDefault();
             
-            // Dispara o evento de Lead no Meta Pixel quando clicado
+            // Dispara a conversão no Meta Pixel exatamente ao clicar
             if (window.fbq) {
                 fbq('track', 'Lead');
             }
@@ -157,21 +152,4 @@
         <div class="bg-gradient-to-r from-neonPink/20 via-purple-900/30 to-neonCyan/20 border-b border-white/10 py-2.5 px-4 text-center">
             <div class="max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-2 text-xs md:text-sm font-semibold text-gray-200">
                 <span>⚡ O Lote Gratuito encerra em:</span>
-                <div class="flex items-center gap-1 font-mono font-bold text-neonYellow bg-black/60 px-2 py-0.5 rounded border border-neonYellow/30">
-                    <span id="timer-min">09</span>m : <span id="timer-sec">45</span>s
-                </div>
-                <span class="text-gray-400">| Restam apenas <span class="text-neonCyan font-bold">14 vagas</span></span>
-            </div>
-        </div>
-
-        <!-- 2. HERO SECTION -->
-        <section class="max-w-4xl mx-auto px-4 pt-8 pb-12 text-center relative">
-            
-            <!-- Badge Pulsante Superior -->
-            <div class="inline-flex items-center gap-2 bg-gradient-to-r from-neonPink/20 to-neonCyan/20 border border-neonPink/50 px-4 py-1.5 rounded-full mb-6">
-                <span class="text-neonYellow text-sm">🔥</span>
-                <span class="text-xs md:text-sm font-bold tracking-wide text-white">GRUPO VIP DE OFERTAS & PRÉ-VENDA GTA VI</span>
-            </div>
-
-            <!-- Headline H1 -->
-            <h1 class="text-3xl sm:text-5xl md:text-6xl
+                <div class="flex items-center gap-1 font-mono font-bold text-neonYellow bg-black/60 px-2 py-0.5 rounded border
